@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Firebase Auth on Web</title>
+
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h1 class="text-center">Firebase Web Authentication Sample</h1>
+            <div id="loginDiv">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Email"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="Password"
+                    />
+                </div>
+
+                <button onclick="login()" id="btnLogin" class="btn btn-primary">
+                    Log in
+                </button>
+                <button id="btnSignUp" class="btn btn-secondary">
+                    Sign Up
+                </button>
+            </div>
+
+            <div id="userDiv">
+                <h3>Welcome User!</h3>
+                <p>
+                    Welcome to Firebase web login Example. You are currently
+                    logged in.
+                </p>
+                <button id="btnLogOut" class="btn btn-outline-danger hide">
+                    Log Out
+                </button>
+            </div>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+        <script src="app.js"></script>
+    </body>
+</html>

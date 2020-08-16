@@ -1,0 +1,15 @@
+#loginDiv {
+    width: 500px;
+    margin: 0px auto;
+    padding: 20px;
+    margin-top: 100px;
+    display: none;
+}
+
+#userDiv {
+    width: 500px;
+    margin: 0px auto;
+    padding: 20px;
+    margin-top: 100px;
+    display: none;
+}
